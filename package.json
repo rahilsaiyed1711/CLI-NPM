@@ -1,0 +1,32 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon build/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.13.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "bin": {
+    "create-node-app": "./build/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "express": "^4.21.2",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.5.0",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7"
+  }
+}
