@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import inquirer from 'inquirer';
 import fs from 'fs';
 
@@ -23,7 +25,6 @@ const QUESTIONS: any = [
 ];
 
 inquirer.prompt(QUESTIONS).then((ans) => {
-  console.log(ans);
   const projectChoice = ans['project-choice'];
   const projectName = ans['project-name'];
   const templatePath = `${__dirname}/templates/${projectChoice}`;

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -27,7 +28,6 @@ const QUESTIONS = [
     },
 ];
 inquirer_1.default.prompt(QUESTIONS).then((ans) => {
-    console.log(ans);
     const projectChoice = ans['project-choice'];
     const projectName = ans['project-name'];
     const templatePath = `${__dirname}/templates/${projectChoice}`;
